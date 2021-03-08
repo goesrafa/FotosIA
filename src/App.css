@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+/*Folha de estilo*/
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+*{
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+    font-family: 'RocknRoll One', sans-serif;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+img{
+    width: 150px;
+    border-radius: 75px;
+    margin: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.linha{
+    display: flex;
+    flex-direction: row;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+button{
+    font-size: 15px;
+    margin: 20px; /*externa*/
+    padding: 15px; /*interna*/
+    background: #483D8B;
+    border-radius: 15px;
+    border: 2px solid #6959CD;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover{
+    background: white;
+    color: #6959CD;
+    border: 2px solid #483D8B;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label, select{
+    font-size: 10px;
+    padding: 10px;
+    margin: 10px;
+
 }
